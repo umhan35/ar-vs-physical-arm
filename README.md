@@ -10,5 +10,5 @@ There are two subrepos, one for ROS code and one for Unity code.
 
 Please read their own READMEs.
 
-- ROS code: [ros-unity]
-- Unity code: [unity-ar-physical-arm]
+- ROS code: [ros-unity](ros-unity)
+- Unity code: [unity-ar-physical-arm](unity-ar-physical-arm)
