@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node name="waypoints_node" pkg="waypoints" type="waypoints_node" respawn="false" output="screen">
+  </node>
+
+</launch>

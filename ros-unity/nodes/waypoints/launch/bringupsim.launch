@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <arg name="sim" default="true"/>
+
+  <include file="$(find waypoints)/launch/bringup.launch">
+    <arg name="sim" value="$(arg sim)" />
+    <arg name="rosbridge_websocket_port" value="9091" />
+  </include>
+
+</launch>

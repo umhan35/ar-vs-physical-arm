@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <arg name="sim" default="false"/>
+
+  <arg name="rosbridge_websocket_port" default="9090"/>
+
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" >
+   <arg name="port" value="$(arg rosbridge_websocket_port)"/>
+  </include>
+
+
+  <include file="$(find widowx_arm_bringup)/launch/arm_moveit.launch">
+    <arg name="sim" value="$(arg sim)" />
+  </include>
+
+  <node name="waypoints_node" pkg="waypoints" type="waypoints_node" respawn="false" output="screen" required="true" />
+
+  <node name="csv_node" pkg="csv" type="csv_node" respawn="false" output="screen" required="true" />
+
+</launch>

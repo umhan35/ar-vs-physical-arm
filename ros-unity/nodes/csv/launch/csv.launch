@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node name="csv_node" pkg="csv" type="csv_node" respawn="false" output="screen">
+  </node>
+
+</launch>
